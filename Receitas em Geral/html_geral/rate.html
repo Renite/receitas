@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Receitas em Geral/css/stylerate.css">
+    <title>Rate</title>
+</head>
+<body background="/Receitas em Geral/img_geral/background.jpg">
+    <header>
+        <div class="container">
+            <div class="logo"><img src="/Receitas em Geral/img_geral/1.png" alt="logo" width="100px" style="border-radius: 15px;"></div>
+            <nav>
+                <ul>
+                    <li><a class="A" href="/Receitas em Geral/html_geral/index.html">Página Inicial</a></li>
+                    <li><a class="A" href="/Receitas em Geral/html_geral/developer.html" target="_blank">Desenvolvedor</a></li>
+                    <li><a class="A" href="/Receitas em Geral/html_geral/rate.html">Avalie Nosso Site</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="containerforms">
+        <form method="post" action="null">
+            <fieldset>
+                <legend>Deixe seu Feedback</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email: (opcional)</label>
+                <input type="email" id="email" name="email">
+
+                <label for="avaliacao">Avaliação Geral:</label>
+                <select id="avaliacao" name="avaliacao" required>
+                    <option value="--" selected disabled>Selecione</option>
+                    <option value="1">Muito Ruim</option>
+                    <option value="2">Ruim</option>
+                    <option value="3">Regular</option>
+                    <option value="4">Bom</option>
+                    <option value="5">Excelente</option>
+                </select>
+
+                <label for="favorito">Receita Favorita: (opcional)</label>
+                <input type="text" id="favorito" name="favorito">
+
+                <label for="sugestao">Sugestões de Melhoria: (opcional)</label>
+                <textarea id="sugestao" name="sugestao" rows="4" cols="50"></textarea>
+
+                <label for="mensagem">Comentários Adicionais: (opcional)</label>
+                <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea>
+
+                <input type="submit" value="Enviar Feedback">
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>
